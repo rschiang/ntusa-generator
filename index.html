@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zh-TW">
+<html class="no-js" lang="zh-Hant">
 <head>
     <meta charset="utf-8">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-    <title>7 號頭像產生器</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>NTU MISSION | 任務頭像自己做！</title>
 
     <link href="images/favicon.png" rel="shortcut icon">
     <link href="vendor/bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
@@ -14,12 +14,12 @@
     <link href="vendor/ie-alert/iealert/style.css" rel="stylesheet" />
     <link href="stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
 
-    <meta property="og:title" content="7 號頭像產生器" />
+    <meta property="og:title" content="NTU MISSION 頭像自己做！" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://kp.kxgen.net/" />
-    <meta property="og:image" content="http://kp.kxgen.net/images/fb.png" />
-    <meta property="og:site_name" content="7 號頭像產生器" />
-    <meta property="og:description" content="" />
+    <meta property="og:url" content="https://ntustudents.org/mission/gen/" />
+    <meta property="og:image" content="https://ntustudents.org/mission/gen/images/fb.png" />
+    <meta property="og:site_name" content="國立臺灣大學學生會" />
+    <meta property="og:description" content="給自己一個機會，做沒做過的事、不敢做的事，走出舒適圈；發現沒見過的臺大，原來臺大還可以這樣玩；去找朋友、夥伴、情人，重建情感關係吧！" />
 </head>
 <body id="drop">
     <div id="content" class="container">
@@ -27,8 +27,10 @@
             <div class="text-center" id="generator">
                 <div id="settings">
                     <div class="col-sm-12 control-box">
-                        <h1 class="logo">7號頭像產生器</h1>
-                        <a class="uploadBtn">請按此上傳圖片</a><span class="mobile-hide">，或直接將圖片拖曳到頁面中</span><br>我們提供了 10 幾種樣板，讓您自由選擇<br>您可自由移動、縮放圖片到合適位置和大小<br>完成後，請點擊「下載圖片」按鈕
+                        <h1 class="logo">NTU MISSION 頭像自己做！</h1>
+                        <a class="uploadBtn">按這裡上傳你的照片</a><span class="mobile-hide">，或直接將照片拖曳到頁面中</span>。<br>
+                        你可以選擇喜歡的底圖，自由移動、縮放圖片到合適的尺寸；<br>
+                        完成後，請按一下「下載！」
                     </div>
                     <div class="col-sm-12 control-box">
                         <div id="templates" class="text-center" data-toggle="buttons">
@@ -113,7 +115,7 @@
                 </div><!-- preview end -->
 
                 <div id="formbuttons" class="control-box text-center">
-                    <button href="#" id="normalSubmit">下載圖片</button>
+                    <button href="#" id="normalSubmit">下載！</button>
                 </div>
 
                 <p class="text-center" style="margin-bottom: 2em;">做好自己的頭像後也歡迎<a href="http://kp7head.tumblr.com">到此投稿</a></p>
@@ -122,28 +124,27 @@
     </div>
 
     <div id="copyright" class="text-center">
-        <a href="http://kptaipei.tw" target="_blank">柯文哲</a>,
-        <a href="https://www.facebook.com/kxgen" target="_blank">KANGXI</a>,
-        <a href="https://www.facebook.com/unfoldgroup" target="_blank">unfold</a> 出品,
-        <a href="https://github.com/goooooooogle/profile-picture-generator" target="_blank">Github Source Code</a>.</div>
+        © 2016 NTU Student Association<br />
+        <a href="https://github.com/rschiang/ntusa-profile-gen" target="_blank">開放原始碼</a>
+    </div>
 
-        <img src="images/sample.jpg" id="loadimage" class="hide">
-        <form action='#' onsubmit="return false;">
-            <input type="file" name="Filedata" id="uploadInput">
-            <div id="uploading">圖片讀取中，請稍候</div>
-        </form>
-        <input type="hidden" name="source" id="source">
-        <canvas id="canvas" class="hide"></canvas>
-        <canvas id="thumb" class="hide"></canvas>
-        <canvas id="result" class="hide"></canvas>
-        <a id="download" class="hide" download="7.png">Download</a>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
-        <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="vendor/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
-        <script src="vendor/jquery.ui.rotatable.min.js" type="text/javascript"></script>
-        <script src="vendor/ie-alert/iealert.min.js" type="text/javascript"></script>
-        <script src="vendor/konami.js" type="text/javascript"></script>
-        <script src="javascript/all.min.js" type="text/javascript"></script>
-    </body>
-    </html>
+    <img src="images/sample.jpg" id="loadimage" class="hide">
+    <form action='#' onsubmit="return false;">
+        <input type="file" name="Filedata" id="uploadInput">
+        <div id="uploading">照片讀取中，請稍候</div>
+    </form>
+    <input type="hidden" name="source" id="source">
+    <canvas id="canvas" class="hide"></canvas>
+    <canvas id="thumb" class="hide"></canvas>
+    <canvas id="result" class="hide"></canvas>
+    <a id="download" class="hide" download="7.png">Download</a>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="vendor/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+    <script src="vendor/jquery.ui.rotatable.min.js" type="text/javascript"></script>
+    <script src="vendor/ie-alert/iealert.min.js" type="text/javascript"></script>
+    <script src="vendor/konami.js" type="text/javascript"></script>
+    <script src="javascript/all.min.js" type="text/javascript"></script>
+</body>
+</html>

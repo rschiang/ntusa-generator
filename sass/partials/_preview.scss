@@ -53,7 +53,6 @@
     width: 0;
     height: 0;
     cursor: move;
-    // background: rgba(127,127,127,0.5);
   }
   #size-slider {
     position: absolute;
@@ -62,7 +61,6 @@
     right: 0;
     z-index: 100;
     margin: 0 20px;
-    // opacity: 0;
 
     &.ui-widget-content {
       @include border-radius(0px);
@@ -76,7 +74,7 @@
         display: block;
         width: 110%;
         height: 40px;
-        background: white;
+        background: lighten($main-color, 35%);
         @include border-radius(20px);
         margin-left: -5%;
       }
@@ -111,8 +109,7 @@
     }
   }
   #userimage .inner {
-    background-color: #CCCCCC;
-    // background-color: black;
+    background-color: $main-color-light;
   }
   #loading {
     position: absolute;
@@ -137,18 +134,4 @@
       margin-left: -21px;
     }
   }
-  // @include at-breakpoint($pad) {
-  //   display: block;
-  //   position: relative;
-  //   // min-height: 75%;
-  //   top: inherit;
-  //   bottom: inherit;
-  //   left: inherit;
-  //   right: inherit;
-  //   // background: none;
-  //   margin-top: -60px;
-  //   // z-index: 1000;
-  //   // opacity: 1;
-  //   height: inherit;
-  // }
 }

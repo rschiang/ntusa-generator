@@ -1,5 +1,5 @@
 @import "compass";
-@import "susy";
+@import "susyone";
 
 // helper
 @import "helper/form";
@@ -36,9 +36,9 @@
   margin: 0;
   border: none;
   background-color: transparent;
-  color: white;
+  color: $main-color-dark;
   border-bottom: 2px solid white;
   font-size: 24px;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1.3;
 }
